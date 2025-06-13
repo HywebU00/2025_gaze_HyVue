@@ -63,7 +63,7 @@ export default {
         {
           title: "02.櫃位狀態",
           name: "02.status.html",
-          fileLink: "https://hywebu00.github.io//2025_gaze_HyVue/#/",
+          fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/",
           fileNote: "櫃位狀態",
         },
         {
