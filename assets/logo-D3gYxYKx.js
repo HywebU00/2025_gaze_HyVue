@@ -1,0 +1,1 @@
+import{_ as o,aU as r,r as t,o as n}from"./index-CFxeRAIE.js";const s={};function c(_,a){const e=t("router-view");return n(),r(e)}const i=o(s,[["render",c]]),m=""+new URL("logo-h2rgtQWI.svg",import.meta.url).href;export{m as _,i as p};
