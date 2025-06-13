@@ -8,7 +8,11 @@ const routes = [
     children: [
       {
         path: "/",
-        component: () => import("@/views/admin/defaultComponent.vue"),
+        component: () => import("@/views/admin/statusComponent.vue"),
+      },
+      {
+        path: "vuetify",
+        component: () => import("@/views/admin/vuetifyComponent.vue"),
       },
     ],
   },

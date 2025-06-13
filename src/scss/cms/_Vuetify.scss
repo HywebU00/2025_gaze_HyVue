@@ -1,0 +1,76 @@
+@use '_variable.scss' as *; //variable
+.v-btn {
+  height: 50px !important;
+  padding: 0 30px !important;
+  .v-btn__content {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0rem;
+  }
+  &:hover {
+    background: $tabColor3 !important;
+  }
+}
+.dataTableServer {
+  &.v-data-table {
+    background-color: $blockBg;
+    .v-data-table__thead {
+      background: $trColor !important;
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 0;
+      tr {
+        border-radius: 0.25rem !important;
+      }
+      tr > th {
+        white-space: nowrap !important;
+      }
+    }
+    td {
+      height: 90px !important;
+      font-size: 20px;
+      color: $textColor;
+    }
+  }
+  .borrow {
+    font-weight: 500;
+    color: $btnBg3;
+  }
+  .v-btn {
+    padding: 1em !important;
+    min-width: unset;
+    width: 30px;
+    height: 30px;
+    background-color: unset !important;
+    &:hover {
+      .v-btn__overlay {
+        opacity: 0 !important;
+      }
+    }
+    .btnImg {
+      width: 30px;
+      height: 30px;
+      display: block;
+      &:hover {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .edit {
+      background: url('@/images/cms/icon_edit.svg') no-repeat center center;
+      &:hover {
+        background: url('@/images/cms/icon_edit_.svg') no-repeat center center;
+      }
+    }
+    .delete {
+      background: url('@/images/cms/icon_delete.svg') no-repeat center center;
+      &:hover {
+        background: url('@/images/cms/icon_delete_.svg') no-repeat center center;
+      }
+    }
+  }
+  .v-data-table-footer {
+    font-size: 1rem;
+    color: $textColor;
+  }
+}

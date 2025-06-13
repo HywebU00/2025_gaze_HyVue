@@ -26,7 +26,6 @@
               {{ tab }}
             </div>
           </div>
-          <v-btn color="primary">測試</v-btn>
           <!-- 頁籤內容 -->
           <div :class="['tabContent', { active: currentTab === 0 }]">
             <div class="caseInfo">

@@ -12,11 +12,17 @@
         </thead>
         <tr v-for="(item, index) in data" :key="index">
           <td>{{ item.title }}</td>
+
           <td>
-            <a :href="`${item.fileNote}`">{{ item.name }}</a>
+            <a :href="`${item.fileLink}`">{{ item.name }}</a>
           </td>
           <td>
-            <!-- <a :href="`portrait/${item.filePortrait}`">{{ item.name }}</a> -->
+            <span
+              style="color: #a9a7a7"
+              v-if="item.fileNote.trim().length === 0"
+              >無頁面</span
+            >
+            <span v-else>{{ item.fileNote }}</span>
           </td>
         </tr>
       </table>
@@ -32,98 +38,105 @@ export default {
         {
           title: "01.後台登入頁",
           name: "01.login.html",
-          fileLandscape: "https://hywebu00.github.io/2025_gaze_Vue/#/password",
-          fileNote: "",
+
+          fileLink: "https://hywebu00.github.io/2025_gaza_HyVue/#/login",
+          fileNote: "登入",
         },
         {
           title: "01-1.忘記密碼1",
           name: "01-1.forget_pw1.html",
-          fileLandscape: "",
+          fileLink: "https://hywebu00.github.io/2025_gaza_HyVue/#/login/pw1",
           fileNote: "輸入電子郵件來重設您的密碼",
         },
         {
           title: "01-2.忘記密碼2",
           name: "	01-2.forget_pw2.html",
-          fileLandscape: "",
+          fileLink: "https://hywebu00.github.io/2025_gaza_HyVue/#/login/pw2",
           fileNote: "重設你的密碼",
         },
         {
           title: "01-2.忘記密碼3",
           name: "	01-3.forget_pw3.html",
-          fileLandscape: "",
-          fileNote: "",
+          fileLink: "https://hywebu00.github.io/2025_gaza_HyVue/#/login/pw3",
+          fileNote: "密碼變更成功",
         },
         {
           title: "02.櫃位狀態",
           name: "02.status.html",
-          fileLandscape: "",
-          fileNote: "",
+          fileLink: "https://hywebu00.github.io//2025_gaze_HyVue/#/",
+          fileNote: "櫃位狀態",
         },
         {
           title: "03.設備歸還",
           name: "03.return.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "04.統計報表",
           name: "	04.statistics.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "05.充電櫃管理",
           name: "	05.manage.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "05-1.充電櫃管理-新增充電櫃",
           name: "	05-1.manage_add.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "05-2.充電櫃管理-資料維護",
           name: "05-2.充電櫃管理-資料維護",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "06.同意條款維護",
           name: "	06.terms.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "07.卡片維護-讀者卡列表",
           name: "	07.card_reader.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "07-1.卡片維護-館員卡列表",
           name: "	07-1.card_librarian.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "07-2.卡片維護-新增卡片",
           name: "	07-2.card_add.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "07-2.卡片維護-卡片資訊",
           name: "07-3.card_info.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
         },
         {
           title: "08.彈出視窗",
           name: "08.dialog.html",
-          fileLandscape: "",
+          fileLink: "",
           fileNote: "",
+        },
+        {
+          title: " 📌 Vuetify元件頁面",
+          name: "vuetify.html",
+          fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/vuetify",
+          fileNote: "元件列表",
         },
       ],
     };
