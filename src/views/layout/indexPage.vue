@@ -39,31 +39,32 @@ export default {
           title: "01.後台登入頁",
           name: "01.login.html",
 
-          fileLink: "https://hywebu00.github.io/2025_gaza_HyVue/#/login",
+          fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/login",
           fileNote: "登入",
         },
         {
           title: "01-1.忘記密碼1",
           name: "01-1.forget_pw1.html",
-          fileLink: "https://hywebu00.github.io/2025_gaza_HyVue/#/login/pw1",
+          fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/login/pw1",
           fileNote: "輸入電子郵件來重設您的密碼",
         },
         {
           title: "01-2.忘記密碼2",
           name: "	01-2.forget_pw2.html",
-          fileLink: "https://hywebu00.github.io/2025_gaza_HyVue/#/login/pw2",
+          fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/login/pw2",
           fileNote: "重設你的密碼",
         },
         {
           title: "01-2.忘記密碼3",
           name: "	01-3.forget_pw3.html",
-          fileLink: "https://hywebu00.github.io/2025_gaza_HyVue/#/login/pw3",
+          fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/login/pw3",
           fileNote: "密碼變更成功",
         },
         {
           title: "02.櫃位狀態",
           name: "02.status.html",
           fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/",
+
           fileNote: "櫃位狀態",
         },
         {
