@@ -14,6 +14,10 @@ const routes = [
         path: "vuetify",
         component: () => import("@/views/admin/vuetifyComponent.vue"),
       },
+      {
+        path: "chart",
+        component: () => import("@/views/admin/chartComponent.vue"),
+      },
     ],
   },
   {

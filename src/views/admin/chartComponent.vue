@@ -15,7 +15,7 @@
       <div class="chartDayBlock bgBlock">
         <!-- function start -->
         <div class="function">
-          <div class="tableTitle">設備借用日統計</div>
+          <div class="tableTitle">設備借用週統計</div>
           <div class="filter">
             <div class="page">
               <!-- 沒有上下頁加none -->
