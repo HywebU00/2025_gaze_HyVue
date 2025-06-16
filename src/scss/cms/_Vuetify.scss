@@ -81,3 +81,35 @@
     opacity: 1;
   }
 }
+
+.v-overlay {
+  .v-overlay__content {
+    &:has(.dialogCard) {
+      width: 50%;
+    }
+  }
+}
+.dialogCard {
+  .v-card-title {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: flex-end;
+  }
+  .v-card-text {
+    color: #534741;
+    font-weight: 500;
+  }
+  .v-card-actions {
+    display: flex;
+    justify-content: center !important;
+    padding: 1rem;
+  }
+}
+.dialogClose {
+  background: url('@/images/cms/icon_delete.svg') no-repeat center center;
+  width: 30px;
+  height: 30px;
+  &:hover {
+    background: url('@/images/cms/icon_delete_.svg') no-repeat center center;
+  }
+}

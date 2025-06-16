@@ -1,0 +1,24 @@
+.chartUser {
+  &:has(> .chart) {
+    width: 100%;
+    display: block;
+    canvas {
+      width: 100%;
+    }
+  }
+  .leftChart {
+    .chart {
+      display: flex;
+      justify-content: center;
+
+      div {
+        width: 50%;
+        height: 100%;
+        canvas {
+          height: auto;
+          width: 50%;
+        }
+      }
+    }
+  }
+}

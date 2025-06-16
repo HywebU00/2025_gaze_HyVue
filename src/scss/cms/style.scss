@@ -5,6 +5,7 @@
 @use '_header.scss' as *; //header
 @use '_tableWrapper.scss' as *; //tableWrapper
 @use '_Vuetify.scss' as *; //tableWrapper
+@use '_chart.scss' as *; //chart
 body {
   background: url(@/images/cms/bg.jpg) repeat;
   font-size: $fontSize;
