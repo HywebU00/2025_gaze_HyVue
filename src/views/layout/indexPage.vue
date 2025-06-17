@@ -139,6 +139,12 @@ export default {
           fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/vuetify",
           fileNote: "元件列表",
         },
+        {
+          title: " 📌 chart元件頁面",
+          name: "chart.html",
+          fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/chart",
+          fileNote: "元件列表",
+        },
       ],
     };
   },
