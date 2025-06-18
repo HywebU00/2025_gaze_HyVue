@@ -8,11 +8,17 @@
           <div class="password">
             <input
               name="password"
-              type="password"
+              :type="passwordShow ? 'password' : 'text'"
               placeholder="輸入新密碼"
               title="輸入新密碼"
             />
-            <button type="button" class="passwordEye hide">顯示密碼</button>
+            <button
+              @click="passwordShow = !passwordShow"
+              type="button"
+              :class="['passwordEye', passwordShow ? 'hide' : 'show']"
+            >
+              顯示密碼
+            </button>
           </div>
           <div class="notice error">請輸入六位數密碼</div>
         </div>
@@ -20,11 +26,17 @@
           <div class="password">
             <input
               name="password"
-              type="password"
+              :type="passwordShow1 ? 'password' : 'text'"
               placeholder="再次輸入新密碼"
               title="再次輸入新密碼"
             />
-            <button type="button" class="passwordEye hide">顯示密碼</button>
+            <button
+              @click="passwordShow1 = !passwordShow1"
+              type="button"
+              :class="['passwordEye', passwordShow1 ? 'hide' : 'show']"
+            >
+              顯示密碼
+            </button>
           </div>
           <div class="notice error">您輸入的密碼不一致</div>
         </div>
@@ -45,7 +57,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      passwordShow: true,
+      passwordShow1: true,
+    };
+  },
+};
 </script>
 
 <style></style>
