@@ -81,7 +81,80 @@
     opacity: 1;
   }
 }
-
+.dataTableVirtual {
+  .v-data-table__thead {
+    background: $trColor !important;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0;
+    tr {
+      border-radius: 0.25rem !important;
+    }
+    tr > th {
+      white-space: nowrap !important;
+    }
+  }
+  &.v-table--fixed-header > .v-table__wrapper > table > thead > tr > th {
+    background: $trColor !important;
+    color: #fff;
+    font-size: 20px;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+  &.v-table {
+    background: none;
+    .v-table__wrapper > table > tbody > tr:not(:last-child) > td {
+      border-bottom: thin solid #fff !important;
+    }
+  }
+  .v-data-table__tr {
+  }
+  tbody {
+    tr {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+  td {
+    height: 90px !important;
+    font-size: 20px;
+    color: $textColor;
+  }
+  .v-btn {
+    padding: 1em !important;
+    min-width: unset;
+    width: 30px;
+    height: 30px;
+    background-color: unset !important;
+    &:hover {
+      .v-btn__overlay {
+        opacity: 0 !important;
+      }
+    }
+    .btnImg {
+      width: 30px;
+      height: 30px;
+      display: block;
+      &:hover {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .edit {
+      background: url('@/images/cms/icon_edit.svg') no-repeat center center;
+      &:hover {
+        background: url('@/images/cms/icon_edit_.svg') no-repeat center center;
+      }
+    }
+    .delete {
+      background: url('@/images/cms/icon_delete.svg') no-repeat center center;
+      &:hover {
+        background: url('@/images/cms/icon_delete_.svg') no-repeat center center;
+      }
+    }
+  }
+}
 .v-overlay {
   .v-overlay__content {
     &:has(.dialogCard) {

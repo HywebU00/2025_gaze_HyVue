@@ -30,6 +30,9 @@
         <!-- tableWrapper start -->
         <div class="tableWrapper">
           <dataTableServerVue />
+          <div class="mt-4">
+            <dataTableVirtualVue />
+          </div>
         </div>
         <!-- tableWrapper end -->
       </div>
@@ -39,7 +42,7 @@
 
 <script>
 import dataTableServerVue from "@/components/dataTableServer.vue";
-
+import dataTableVirtualVue from "@/components/dataTableVirtualVue.vue";
 export default {
   data() {
     return {
@@ -49,6 +52,7 @@ export default {
   },
   components: {
     dataTableServerVue,
+    dataTableVirtualVue,
   },
 };
 </script>
