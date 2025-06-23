@@ -145,6 +145,12 @@ export default {
           fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/chart",
           fileNote: "元件列表",
         },
+        {
+          title: " 📌 return頁面",
+          name: "return.html",
+          fileLink: "https://hywebu00.github.io/2025_gaze_HyVue/#/return",
+          fileNote: "元件列表",
+        },
       ],
     };
   },

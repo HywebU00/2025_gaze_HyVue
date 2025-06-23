@@ -15,6 +15,10 @@ const routes = [
         component: () => import("@/views/admin/vuetifyComponent.vue"),
       },
       {
+        path: "return",
+        component: () => import("@/views/admin/returnComponent.vue"),
+      },
+      {
         path: "chart",
         component: () => import("@/views/admin/chartComponent.vue"),
       },

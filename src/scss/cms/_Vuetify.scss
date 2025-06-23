@@ -186,3 +186,93 @@
     background: url('@/images/cms/icon_delete_.svg') no-repeat center center;
   }
 }
+.v-form {
+  .v-field {
+    // background: #ded6d0;
+  }
+  .v-field__input {
+    padding: 0 1rem;
+    font-size: 1.25em;
+
+    input {
+      &:focus-visible {
+        border: none;
+      }
+    }
+  }
+  .v-field--variant-solo {
+    box-shadow: none;
+  }
+
+  .v-select {
+    .v-field {
+      border: 2px solid #fff;
+    }
+
+    .v-field[aria-expanded='true'] {
+      border: 2px solid #582f2f;
+    }
+  }
+
+  .v-input__control {
+    input {
+      &:focus-visible {
+        background: none;
+      }
+    }
+  }
+
+  .v-select .v-field .v-field__input {
+    padding: 0 1rem;
+    > input {
+      height: 2.5rem;
+      background: none;
+      border: none;
+    }
+  }
+  .v-select__selection {
+    + input {
+      height: 2.5rem;
+      padding: 0;
+    }
+  }
+  .v-textarea .v-field__input {
+    mask-image: none;
+  }
+  .v-input__details {
+    padding-top: 1.25em;
+    padding-inline: 0 !important;
+    padding-left: 0;
+  }
+  .v-messages {
+    opacity: 1;
+
+    .v-messages__message {
+      font-size: 1.2em;
+      color: #e11111;
+      line-height: 1.5em;
+    }
+  }
+
+  input {
+    &::placeholder {
+      font-size: 1.25em;
+    }
+  }
+  .v-field__field {
+    .v-field-label {
+      font-size: 1.25em;
+    }
+
+    textarea {
+      &.v-field__input {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+  .v-radio-group {
+    .v-label {
+      font-size: 1.25em;
+    }
+  }
+}
