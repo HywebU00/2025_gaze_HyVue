@@ -203,7 +203,9 @@
   .v-field--variant-solo {
     box-shadow: none;
   }
-
+  .v-field.v-field--appended {
+    padding-right: 0;
+  }
   .v-select {
     .v-field {
       border: 2px solid #fff;
