@@ -93,15 +93,67 @@
                   </td>
                 </tr>
                 <tr>
+                  <th>文字標準表單 v-autocomplete</th>
+                  <td>
+                    <v-autocomplete
+                      clearable
+                      chips
+                      density="compact"
+                      label="Autocomplete"
+                      :items="[
+                        'California',
+                        'Colorado',
+                        'Florida',
+                        'Georgia',
+                        'Texas',
+                        'Wyoming',
+                      ]"
+                      multiple
+                      single-line
+                      variant="solo"
+                    ></v-autocomplete>
+                  </td>
+                </tr>
+                <tr>
                   <th>文字標準表單</th>
                   <td>
                     <v-text-field
                       density="compact"
-                      label="文字標準表單"
+                      label=""
                       variant="solo"
                       single-line
                       class="input"
                       hide-details="auto"
+                    ></v-text-field>
+                  </td>
+                </tr>
+                <tr>
+                  <th>文字標準表單 clearable</th>
+                  <td>
+                    <v-text-field
+                      v-model="inputText"
+                      density="compact"
+                      label=""
+                      variant="solo"
+                      single-line
+                      class="input"
+                      hide-details="auto"
+                      clearable
+                    ></v-text-field>
+                  </td>
+                </tr>
+                <tr>
+                  <th>文字標準表單 error="true"</th>
+                  <td>
+                    <v-text-field
+                      density="compact"
+                      label=""
+                      variant="solo"
+                      :error="true"
+                      single-line
+                      class="input"
+                      hide-details="auto"
+                      error-messages="欄位不得為空"
                     ></v-text-field>
                   </td>
                 </tr>
@@ -141,6 +193,8 @@ export default {
     return {
       currentTab: 0,
       tabs: ["直立式48格", "桌上型8格", "桌上型8+12格"],
+      inputText:
+        "@/components/dataTableVirtualVue.vue@/components/dataTableVirtualVue.vue@/components/dataTableVirtualVue.vue",
     };
   },
   components: {

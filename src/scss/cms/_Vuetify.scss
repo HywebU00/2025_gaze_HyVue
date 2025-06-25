@@ -188,6 +188,27 @@
 }
 .v-form {
   .v-field {
+    &.v-field--error.v-field--variant-solo {
+      border: 1px solid $redColor;
+      outline: 0;
+      input {
+        &:focus-visible {
+          border: 1px solid $redColor;
+        }
+      }
+    }
+    &:has(.v-field__clearable) {
+      .v-field__field {
+        input {
+          padding-right: 2.75rem;
+        }
+      }
+    }
+    .v-field__clearable {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+    }
     // background: #ded6d0;
   }
   .v-field__input {
